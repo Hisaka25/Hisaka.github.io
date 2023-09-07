@@ -1,0 +1,86 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace MP3_Masigan2
+{
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            //Declaring Variables
+            double prelim, midt, fin, g1, g2, g3, totval;
+
+            //Printing the interface for prelim grade, midterm grade, and final grade
+            
+            Console.Write("Enter your Prelim Grade: ");
+            prelim = double.Parse(Console.ReadLine());
+            Console.Write("Enter your Midterm Grade: ");
+            midt = double.Parse(Console.ReadLine());
+            Console.Write("Enter your Final Grade: ");
+            fin = double.Parse(Console.ReadLine());
+
+            //Calculating the prelim grade, midterm grade, and final grade
+
+            g1 = (prelim * 0.3);
+            g2 = (midt * 0.3);
+            g3 = (fin * 0.4);
+            totval = (g1 + g2 + g3);
+
+            //Printing the semestral grade
+
+            Console.WriteLine("Your Semestral Grade is: " + totval);
+            
+            //IF ELSE Statements for conditions to determine the point grade equivalent of semestral grades
+
+            if (totval >= 97)
+            {
+                Console.WriteLine("You Passed! Your Semestral Grade is equivalent to: 1.00");
+            }
+            else if (totval >= 93)
+            {
+                Console.WriteLine("You Passed! Your Semestral Grade is equivalent to: 1.25");
+            }
+            else if (totval >= 89)
+            {
+                Console.WriteLine("You Passed! Your Semestral Grade is equivalent to: 1.50");
+            }
+            else if (totval >= 85)
+            {
+                Console.WriteLine("You Passed! Your Semestral Grade is equivalent to: 1.75");
+            }
+            else if (totval >= 82)
+            {
+                Console.WriteLine("You Passed! Your Semestral Grade is equivalent to: 2.00");
+            }
+            else if (totval >= 79)
+            {
+                Console.WriteLine("You Passed! Your Semestral Grade is equivalent to: 2.25");
+            }
+            else if (totval >= 76)
+            {
+                Console.WriteLine("You Passed! Your Semestral Grade is equivalent to: 2.50");
+            }
+
+            else if (totval >= 73)
+            {
+                Console.WriteLine("You Passed! Your Semestral Grade is equivalent to: 2.75");
+            }
+            else if (totval >= 70)
+            {
+                Console.WriteLine("You Passed! Your Semestral Grade is equivalent to: 3.00");
+            }
+            else if (totval < 70)
+            {
+                Console.WriteLine("You Failed! Your Semestral Grade is equivalent to: 5.00");
+            }
+            else
+            {
+                Console.WriteLine("Your Semestral Grade is not in range!");
+            }
+            Console.ReadKey();
+        }
+    }
+}
