@@ -1,0 +1,27 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace MP3_Masigan1
+{
+    public class Program
+    {
+        public static void Main(string[] args)
+        { 
+            int num;
+            Console.Write("Enter a Number: ");
+            num = Int32.Parse(Console.ReadLine());
+            if (num%2==0)
+            {
+                Console.WriteLine("The Number you have entered is Even!");
+            }
+            else
+            {
+                Console.WriteLine("The Number you have entered is Odd!");
+            }
+            Console.ReadKey();
+        }
+    }
+}
