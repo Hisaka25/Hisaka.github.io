@@ -1,0 +1,68 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace MP2_Masigan
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            // Declaration of variables
+
+            int num1, num2, totval, sub, prod, val1, val2, val3, val4, val5, val6;
+            float div;
+
+            // Print for entering two numbers
+
+            Console.Write("Enter the First Number: ");
+            num1 = Int32.Parse(Console.ReadLine());
+            Console.Write("Enter the Second Number: ");
+            num2 = Int32.Parse(Console.ReadLine());
+            Console.WriteLine("");
+
+            // Operations
+
+            totval = num1 + num2;
+            sub = num1 - num2;
+            prod = num1 * num2;
+            div = (float)num1 / (float)num2;
+
+            // Print for displaying the computations
+
+            Console.WriteLine("The Sum of the Two Numbers is: " + totval);
+            Console.WriteLine("The Difference of the Two Numbers is: " + sub);
+            Console.WriteLine("The Product of the Two Numbers is: " + prod);
+            Console.WriteLine("The Quotient of the Two Numbers is: " + String.Format("{0:0.00}", div));
+            Console.WriteLine("");
+
+            // Making a new display for another set of numbers
+
+            Console.Write("Enter the First Number: ");
+            val1 = Int32.Parse(Console.ReadLine());
+            Console.Write("Enter the Second Number: ");
+            val2 = Int32.Parse(Console.ReadLine());
+            Console.Write("Enter the Third Number: ");
+            val3 = Int32.Parse (Console.ReadLine());
+            Console.Write("Enter the Fourth Number: ");
+            val4 = Int32.Parse(Console.ReadLine());
+            Console.Write("Enter the Fifth Number: ");
+            val5 = Int32.Parse(Console.ReadLine());
+            Console.Write("Enter the Sixth Number: ");
+            val6 = Int32.Parse(Console.ReadLine());
+
+            // Operations
+
+            float avg;
+            avg = (float)val1 + (float)val2 + (float)val3 + (float)val4 + (float)val5 + (float)val6 / 6;
+
+            // Displaying of avg of the 6 numbers
+
+            Console.WriteLine("");
+            Console.WriteLine("The Average of the Six Numbers is: " + String.Format("{0:0.00}" , avg));
+            Console.ReadKey();
+        }
+    }
+}
